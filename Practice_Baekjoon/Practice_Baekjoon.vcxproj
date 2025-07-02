@@ -133,6 +133,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Problem_1009.cpp" />
     <ClCompile Include="Problem_1012.cpp" />
+    <ClCompile Include="Problem_1018.cpp" />
     <ClCompile Include="Problem_10773.cpp" />
     <ClCompile Include="Problem_10808.cpp" />
     <ClCompile Include="Problem_11724.cpp" />

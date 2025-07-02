@@ -1,4 +1,5 @@
 #pragma once
+#include<vector>
 
 class Problem abstract
 {
@@ -39,6 +40,13 @@ public:
 };
 
 class Problem_1181 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_1018 : public Problem {
+private:
+	int CalCulate_Board_Coloring(std::vector<std::vector<bool>>* board, int startRow, int startCol, int nowMin);
 public:
 	void Solution() override;
 };
