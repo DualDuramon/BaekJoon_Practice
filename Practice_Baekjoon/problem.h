@@ -57,7 +57,17 @@ public:
 };
 
 class Problem_11659 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_2638 : public Problem {
 
 public:
+	void Solution() override;
+};
+
+class Problem_12015 : public Problem {
+public : 
 	void Solution() override;
 };
