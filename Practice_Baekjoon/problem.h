@@ -55,3 +55,9 @@ class Problem_10814 : public Problem {
 public:
 	void Solution() override;
 };
+
+class Problem_11659 : public Problem {
+
+public:
+	void Solution() override;
+};
