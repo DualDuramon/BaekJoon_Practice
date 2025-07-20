@@ -33,7 +33,7 @@ void Problem_2638::Solution() {
 	}
 
 	int phase = 0;
-	do{
+	do {
 		std::vector<std::vector<int>> countMap(h, std::vector<int>(w, 0));
 		std::vector<std::vector<bool>> visited(h, std::vector<bool>(w, false));
 
@@ -69,6 +69,7 @@ void Problem_2638::Solution() {
 			meltCheeseQ.pop();
 		}
 		phase++;
+
 	} while (true);
 
 	std::cout << phase << std::endl;

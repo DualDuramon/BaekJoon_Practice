@@ -1,7 +1,7 @@
 #pragma once
 #include<vector>
 
-class Problem abstract
+class Problem
 {
 protected:
 	virtual void Solving() {};
@@ -67,7 +67,12 @@ public:
 	void Solution() override;
 };
 
-class Problem_12015 : public Problem {
-public : 
+class Problem_2579 : public Problem {
+public :
+	void Solution() override;
+};
+
+class Problem_11053 : public Problem {
+public:
 	void Solution() override;
 };
