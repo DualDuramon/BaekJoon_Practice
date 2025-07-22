@@ -2,7 +2,7 @@
 #include "problem.h"
 
 int main(void) {
-	Problem* pb = new Problem_11726();
+	Problem* pb = new Problem_9020();
 
 	pb->Solution();
 

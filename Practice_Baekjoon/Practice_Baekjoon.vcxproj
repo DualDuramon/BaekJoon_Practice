@@ -131,43 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Problem_1009.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_1012.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_1018.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_10773.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_10808.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_10814.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_11053.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_11659.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_11724.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_11726.cpp" />
-    <ClCompile Include="Problem_1181.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_2579.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Problem_2638.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Problem_9020.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,46 +20,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Problem_1009.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_1012.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_1181.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_10773.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_10808.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_11724.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Problem_1018.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_10814.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_11659.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_2638.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_2579.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_11053.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_11726.cpp">
+    <ClCompile Include="Problem_9020.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

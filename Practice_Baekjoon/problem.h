@@ -8,7 +8,7 @@ protected:
 public:
 	virtual void Solution() = 0;
 };
-
+/*
 class Problem_1009 :public Problem {
 private:
 	void Solving() override;
@@ -78,6 +78,18 @@ public:
 };
 
 class Problem_11726 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_11727 : public Problem {
+public:
+	void Solution() override;
+};
+*/
+class Problem_9020 : public Problem {
+private:
+	void Solving() override;
 public:
 	void Solution() override;
 };
