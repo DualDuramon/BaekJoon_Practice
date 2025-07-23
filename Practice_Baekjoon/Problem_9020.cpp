@@ -41,7 +41,7 @@ void Problem_9020::Solving() {
 		}
 	}
 
-	for (size_t i{ num / 2 }; 2 <= i; i--)
+	for (size_t i = num / 2; 2 <= i; i--)
 	{
 		if (sosuList[num - i] && sosuList[i])
 		{

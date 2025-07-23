@@ -93,3 +93,8 @@ private:
 public:
 	void Solution() override;
 };
+
+class Problem_1153 : public Problem {
+public : 
+	void Solution() override;
+};
