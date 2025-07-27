@@ -98,3 +98,16 @@ class Problem_1153 : public Problem {
 public : 
 	void Solution() override;
 };
+
+class Problem_11054 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_1103 : public Problem {
+private:
+	bool CheckBound(const std::vector<std::vector<char>>& map, int row, int col);
+	int DFS(const std::vector<std::vector<char>>& map, std::vector<std::vector<int>>& lengthMap, std::vector<std::vector<bool>>& visited,  int row, int col);
+public :
+	void Solution() override;
+};
