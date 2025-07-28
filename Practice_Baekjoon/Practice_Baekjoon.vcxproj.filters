@@ -23,16 +23,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Problem_9020.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_1153.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_11054.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Problem_1103.cpp">
+    <ClCompile Include="Problem_4883.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

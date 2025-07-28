@@ -86,7 +86,7 @@ class Problem_11727 : public Problem {
 public:
 	void Solution() override;
 };
-*/
+
 class Problem_9020 : public Problem {
 private:
 	void Solving() override;
@@ -109,5 +109,14 @@ private:
 	bool CheckBound(const std::vector<std::vector<char>>& map, int row, int col);
 	int DFS(const std::vector<std::vector<char>>& map, std::vector<std::vector<int>>& lengthMap, std::vector<std::vector<bool>>& visited,  int row, int col);
 public :
+	void Solution() override;
+};
+*/
+
+class Problem_4883 :public Problem {
+private:
+	bool CheckBoundary(const std::vector<std::vector<int>>& graph,int row, int col);
+	int CalculateCost(int n);
+public:
 	void Solution() override;
 };
