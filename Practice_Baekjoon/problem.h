@@ -120,3 +120,8 @@ private:
 public:
 	void Solution() override;
 };
+
+class Problem_14842 :public Problem {
+public:
+	void Solution() override;
+};
