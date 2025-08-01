@@ -125,3 +125,9 @@ class Problem_14842 :public Problem {
 public:
 	void Solution() override;
 };
+
+class Problem_1535 : public Problem {
+public :
+	void Solution() override;
+
+};
