@@ -1,6 +1,5 @@
 #pragma once
 #include<vector>
-#include<list>
 
 class Problem
 {
@@ -136,6 +135,15 @@ public :
 class Problem_1966 : public Problem {
 private :
 	void Solving() override;
+public:
+	void Solution() override;
+};
+
+class Problem_1080 :public Problem {
+private :
+	bool CheckAnswer(const std::vector<std::vector<bool>>& map, const std::vector<std::vector<bool>>& answer);
+	void Calculate(const std::vector<std::vector<bool>>& map, const std::vector<std::vector<bool>>& answer, int startRow, int startCol);
+	void ChangeMap(std::vector<std::vector<bool>>& map, int row, int col);
 public:
 	void Solution() override;
 };
