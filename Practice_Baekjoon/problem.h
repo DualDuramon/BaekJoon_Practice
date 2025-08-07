@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include<list>
 
 class Problem
 {
@@ -130,4 +131,11 @@ class Problem_1535 : public Problem {
 public :
 	void Solution() override;
 
+};
+
+class Problem_1966 : public Problem {
+private :
+	void Solving() override;
+public:
+	void Solution() override;
 };
