@@ -111,7 +111,7 @@ private:
 public :
 	void Solution() override;
 };
-*/
+
 
 class Problem_4883 :public Problem {
 private:
@@ -150,5 +150,14 @@ public:
 
 class Problem_2839 :public Problem {
 public :
+	void Solution() override;
+};
+*/
+
+class Problem_21736 : public Problem {
+private:
+	bool canMove(const std::vector<std::vector<char>>& map, const std::vector<std::vector<bool>>& visited, int r, int c);
+	int DFS(const std::vector<std::vector<char>>& map, std::vector<std::vector<bool>>& visited, int r, int c);
+public:
 	void Solution() override;
 };
