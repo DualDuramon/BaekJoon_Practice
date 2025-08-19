@@ -161,3 +161,21 @@ private:
 public:
 	void Solution() override;
 };
+
+class Problem_7576 :public Problem {
+private:
+	bool CheckCoord(const std::vector<std::vector<int>>& map, size_t row, size_t col);
+public :
+	void Solution() override;
+};
+
+class Problem_9019 : public Problem {
+private :
+	void Solving() override;
+	int OperD(int);
+	int OperS(int);
+	int OperL(int);
+	int OperR(int);
+public :
+	void Solution() override;
+};

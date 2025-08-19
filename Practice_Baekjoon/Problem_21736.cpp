@@ -4,8 +4,8 @@
 
 using namespace std;
 
-int rDir[] = { -1, 1, 0, 0 };
-int cDir[] = { 0 , 0, -1, 1 };
+static int rDir[] = { -1, 1, 0, 0 };
+static int cDir[] = { 0 , 0, -1, 1 };
 
 bool Problem_21736::canMove(const std::vector<std::vector<char>>& map, const std::vector<std::vector<bool>>& visited, int r, int c) {
 	return (0 <= r && r < map.size())
