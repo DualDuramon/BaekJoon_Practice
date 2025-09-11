@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include<queue>
 
 class Problem
 {
@@ -177,5 +178,34 @@ private :
 	int OperL(int);
 	int OperR(int);
 public :
+	void Solution() override;
+};
+
+class Problem_11866 :public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_7662 :public Problem {
+private :
+	void Solving() override;
+public:
+	void Solution() override;
+};
+
+class Problem_1149 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_12865 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_1038 :public Problem {
+private:
+	void BackTracking(long long, int);
+public:
 	void Solution() override;
 };

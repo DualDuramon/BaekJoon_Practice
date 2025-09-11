@@ -1,6 +1,12 @@
 ﻿  Main.cpp
+  Problem_1038.cpp
+  Problem_1149.cpp
+  Problem_11866.cpp
+  Problem_12865.cpp
+D:\GitHub\BaekJoon_Practice\Practice_Baekjoon\Problem_12865.cpp(7,15): warning C4091: 'static ': 변수를 선언하지 않으면 'item' 왼쪽은 무시됩니다.
   Problem_21736.cpp
   Problem_7576.cpp
+  Problem_7662.cpp
   Problem_9019.cpp
   코드를 생성하고 있습니다...
   Practice_Baekjoon.vcxproj -> D:\GitHub\BaekJoon_Practice\Practice_Baekjoon\x64\Debug\Practice_Baekjoon.exe
