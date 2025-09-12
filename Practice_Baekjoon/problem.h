@@ -153,7 +153,7 @@ class Problem_2839 :public Problem {
 public :
 	void Solution() override;
 };
-*/
+
 
 class Problem_21736 : public Problem {
 private:
@@ -208,4 +208,12 @@ private:
 	void BackTracking(long long, int);
 public:
 	void Solution() override;
+};
+*/
+class Problem_14500 :public Problem {
+private :
+	void CheckTiles(const std::vector<std::vector<int>>&, std::pair<int, int>);
+public:
+	void Solution() override;
+
 };
