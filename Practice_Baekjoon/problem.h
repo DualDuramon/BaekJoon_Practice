@@ -198,11 +198,6 @@ public:
 	void Solution() override;
 };
 
-class Problem_12865 : public Problem {
-public:
-	void Solution() override;
-};
-
 class Problem_1038 :public Problem {
 private:
 	void BackTracking(long long, int);
@@ -212,8 +207,14 @@ public:
 */
 class Problem_14500 :public Problem {
 private :
-	void CheckTiles(const std::vector<std::vector<int>>&, std::pair<int, int>);
+	bool CheckBound(const std::vector<std::vector<int>>&, int, int);
+	void CheckTiles(const std::vector<std::vector<int>>&, std::pair<int,int>);
 public:
 	void Solution() override;
 
+};
+
+class Problem_12865 : public Problem {
+public:
+	void Solution() override;
 };

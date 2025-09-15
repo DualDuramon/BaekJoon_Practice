@@ -17,21 +17,24 @@ void Problem_12865::Solution() {
 	int n{ 0 }, k{ 0 };
 	cin >> n >> k;
 
-	vector<vector<int>> backpack(k + 1, vector<int>(n, 0));
+	vector<vector<int>> backpack(k + 1, vector<int>(n + 1, 0));
 	vector<item> items(n + 1);
 
 	for (int i = 1; i <= n; i++) {
 		cin >> items[i].weight >> items[i].value;
 	}
 
-	for (int i = 0; i <= k; i++) {
-		
+	for (int i = 1; i <= n; i++) {
+		for (int w = 1; w <= k; w++) {
+			if (w - items[i].weight < 0) {
+				backpack[w][i] = backpack[w][i - 1];
+				continue;
+			}
+			backpack[w][i] = max(backpack[w - items[i].weight][i - 1] + items[i].value, backpack[w][i - 1]);
+		}	
 	}
-
-	//넣었을때? 안넣었을때
-	// 넣으면 -> 해당 무게를 뺀 백팩에서 n-1개의 아이템 가지고 백팩문제
-	// 안넣으면 -> 해당 무게를 유지한 백팩에서 n-1개의 아이템 가지고 구하는 백팩문제
 	
 
+	cout << backpack[k][n] << endl;
 	//return 0;
 }

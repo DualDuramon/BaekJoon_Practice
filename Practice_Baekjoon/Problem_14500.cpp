@@ -16,7 +16,7 @@ static dot point[6] = {
 	{0, -1}
 };
 
-bool CheckBound(const std::vector<std::vector<int>>& map, int row, int col) {
+bool Problem_14500::CheckBound(const std::vector<std::vector<int>>& map, int row, int col) {
 
 	return (0 <= row && row < map.size()) && (0 <= col && col < map[0].size());
 }
