@@ -218,3 +218,17 @@ class Problem_12865 : public Problem {
 public:
 	void Solution() override;
 };
+
+class Problem_15650 : public Problem {
+private:
+	void Backtracking(std::vector<int>&, int startNum, int maxNum, int maxLength);
+public:
+	void Solution() override;
+};
+
+class Problem_15652 : public Problem {
+private:
+	void Backtracking(std::vector<int>& nowSet, int nowNum, int maxNum, int maxLength);
+public:
+	void Solution() override;
+};
