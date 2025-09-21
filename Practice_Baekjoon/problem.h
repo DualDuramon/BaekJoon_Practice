@@ -232,3 +232,13 @@ private:
 public:
 	void Solution() override;
 };
+
+class Problem_1463 : public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_14888 :public Problem {
+public:
+	void Solution() override;
+};
