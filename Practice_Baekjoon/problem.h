@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include<set>
 #include<queue>
 
 class Problem
@@ -204,7 +205,7 @@ private:
 public:
 	void Solution() override;
 };
-*/
+
 class Problem_14500 :public Problem {
 private :
 	bool CheckBound(const std::vector<std::vector<int>>&, int, int);
@@ -239,6 +240,20 @@ public:
 };
 
 class Problem_14888 :public Problem {
+public:
+	void Solution() override;
+};
+*/
+class Problem_15654 : public Problem {
+private:
+	void backtracking(const std::vector<int>& list, std::vector<int>& nowSet, std::vector<bool>& selected, int nowIdx, int maxLength);
+public:
+	void Solution() override;
+};
+
+class Problem_9663 : public Problem {
+private:
+	void backtracking(int mapSize, std::vector<std::pair<int,int>>& queensLoc, int nowDepth, int maxDepth, int& cases);
 public:
 	void Solution() override;
 };
