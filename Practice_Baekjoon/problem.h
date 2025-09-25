@@ -257,3 +257,8 @@ private:
 public:
 	void Solution() override;
 };
+
+class Problem_9251 : public Problem {
+public: 
+	void Solution() override;
+};
