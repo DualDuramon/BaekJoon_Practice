@@ -1,9 +1,9 @@
-#include<iostream>
 #include "problem.h"
+#include<iostream>
+
 
 int main(void) {
-	Problem* pb = new Problem_9251();
-
+	Problem* pb = new Problem_1504();
 	pb->Solution();
 
 	delete pb;

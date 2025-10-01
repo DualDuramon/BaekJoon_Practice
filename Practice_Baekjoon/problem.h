@@ -262,3 +262,18 @@ class Problem_9251 : public Problem {
 public: 
 	void Solution() override;
 };
+
+class Problem_14501 :public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_17070 :public Problem {
+public:
+	void Solution() override;
+};
+
+class Problem_1504 : public Problem {
+public :
+	void Solution() override;	
+};
