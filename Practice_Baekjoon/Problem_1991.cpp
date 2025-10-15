@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Preorder(const map<char, pair<char, char>>& tree, char node)
+void Problem_1991::Preorder(const map<char, pair<char, char>>& tree, char node)
 {
 	if (node == '.')
 		return;
@@ -14,7 +14,7 @@ void Preorder(const map<char, pair<char, char>>& tree, char node)
 	Preorder(tree, tree.at(node).second);
 }
 
-void Inorder(const map<char, pair<char, char>>& tree, char node) 
+void Problem_1991::Inorder(const map<char, pair<char, char>>& tree, char node)
 {
 	if (node == '.')
 		return;
@@ -25,7 +25,7 @@ void Inorder(const map<char, pair<char, char>>& tree, char node)
 }
 
 
-void Postorder(const map<char, pair<char, char>>& tree, char node)
+void Problem_1991::Postorder(const map<char, pair<char, char>>& tree, char node)
 {
 	if (node == '.')
 		return;
@@ -34,7 +34,6 @@ void Postorder(const map<char, pair<char, char>>& tree, char node)
 	Postorder(tree, tree.at(node).second);
 	cout << node;
 }
-
 
 
 void Problem_1991::Solution() {

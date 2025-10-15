@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include<map>
 #include<set>
 #include<queue>
 
@@ -279,6 +280,18 @@ public :
 };
 
 class Problem_1991 : public Problem {
-	public:
-		void Solution() override;
+private:
+	void Preorder(const std::map<char, std::pair<char, char>>& tree, char node);
+	void Inorder(const std::map<char, std::pair<char, char>>& tree, char node);
+	void Postorder(const std::map<char, std::pair<char, char>>& tree, char node);
+
+public:
+	void Solution() override;
+};
+
+class Problem_1918 : public Problem {
+private:
+	int CalCulateOrder(char);
+public:
+	void Solution() override;
 };
