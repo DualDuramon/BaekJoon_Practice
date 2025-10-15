@@ -277,3 +277,8 @@ class Problem_1504 : public Problem {
 public :
 	void Solution() override;	
 };
+
+class Problem_1991 : public Problem {
+	public:
+		void Solution() override;
+};
