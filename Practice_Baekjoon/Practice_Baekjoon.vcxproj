@@ -140,10 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Problem_11725.cpp" />
     <ClCompile Include="Problem_14501.cpp" />
     <ClCompile Include="Problem_1504.cpp" />
     <ClCompile Include="Problem_15654.cpp" />
     <ClCompile Include="Problem_17070.cpp" />
+    <ClCompile Include="Problem_1874.cpp" />
     <ClCompile Include="Problem_1918.cpp" />
     <ClCompile Include="Problem_1991.cpp" />
     <ClCompile Include="Problem_9251.cpp" />

@@ -244,7 +244,7 @@ class Problem_14888 :public Problem {
 public:
 	void Solution() override;
 };
-*/
+
 class Problem_15654 : public Problem {
 private:
 	void backtracking(const std::vector<int>& list, std::vector<int>& nowSet, std::vector<bool>& selected, int nowIdx, int maxLength);
@@ -292,6 +292,17 @@ public:
 class Problem_1918 : public Problem {
 private:
 	int CalCulateOrder(char);
+public:
+	void Solution() override;
+};
+
+class Problem_11725 :public Problem {
+public :
+	void Solution() override;
+};
+*/
+
+class Problem_1874 :public Problem {
 public:
 	void Solution() override;
 };

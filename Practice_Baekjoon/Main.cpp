@@ -3,7 +3,7 @@
 
 
 int main(void) {
-	Problem* pb = new Problem_1918();
+	Problem* pb = new Problem_1874();
 	pb->Solution();
 
 	delete pb;
