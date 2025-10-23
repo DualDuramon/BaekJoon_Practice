@@ -23,8 +23,7 @@ int main(){
 	st.push(nowNum++);
 	result.push_back('+');
 
-	while (nowNum <= n+1) {
-		if (answerIdx >= answer.size()) break;
+	while (nowNum <= n+1 && answerIdx < answer.size()) {
 
 		if (st.empty() || st.top() != answer[answerIdx]) {
 			st.push(nowNum++);
