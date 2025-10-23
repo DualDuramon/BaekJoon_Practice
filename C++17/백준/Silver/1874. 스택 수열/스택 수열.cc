@@ -1,42 +1,48 @@
 #include<iostream>
-#include<stack>
 #include<vector>
+#include<stack>
 
-int main(void) {
-	std::ios::sync_with_stdio(false);
-	std::cin.tie(NULL); std::cout.tie(NULL);
-	
-	int n{ 0 };
-	std::cin >> n;
+using namespace std;
 
-	std::stack<int> st;
-	std::vector<char>result;
-	std::vector<int> nums(n);
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr); cout.tie(nullptr);
 
-	for (int i = 0; i < n; i++) {
-		std::cin >> nums[i];
+	int n{ 0 }, nowNum{ 1 };
+	cin >> n;
+
+	vector<int> answer(n, 0);
+	int answerIdx = 0;
+	for (int i = 0; i < answer.size(); ++i) {
+		cin >> answer[i];
 	}
 
-	int counter = 0;
+	stack<int> st;
+	vector<char> result;
 
-	for (int i = 1; i <= n; i++) {
-		st.push(i);
-		result.push_back('+');
-		
-		while (!st.empty()&&st.top() == nums[counter]) {
+	st.push(nowNum++);
+	result.push_back('+');
+
+	while (nowNum <= n+1) {
+		if (answerIdx >= answer.size()) break;
+
+		if (st.empty() || st.top() != answer[answerIdx]) {
+			st.push(nowNum++);
+			result.push_back('+');
+		}
+		else {
 			st.pop();
+			++answerIdx;
 			result.push_back('-');
-			if (counter + 1 < n) counter++;
-			else break;
 		}
 	}
 
-	if (!st.empty()) {
-		std::cout << "NO\n";
+	if (answerIdx < answer.size()) {
+		cout << "NO\n";
 	}
 	else {
-		for (auto i : result) std::cout << i<<"\n";
-		//std::cout <<"\n";
+		for (auto i : result)
+			cout << i << "\n";
 	}
 
 
