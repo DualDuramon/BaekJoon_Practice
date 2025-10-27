@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#define DEFAULT_NUM -10
 
 using namespace std;
 
@@ -24,26 +25,34 @@ int CalCulateNum(int n) {
 	return stoi(result_a + result_b);
 }
 
-int F(int n, vector<bool>& visited) {
-	if (visited[n]) {
-		return 0;
+int F(int n, vector<int>& visited) {
+	if (visited[n] != DEFAULT_NUM) {
+		if (visited[n] == 0) {
+			return 0;
+		}
+		else {
+			return visited[n];
+		}
 	}
 
-	visited[n] = true;
+	visited[n] = 0;
 	int result = CalCulateNum(n);
 
 	if (result > 100000) {
+		visited[n] = -1;
 		return -1;
 	}
 	else if (result == n) {
+		visited[n] = 1;
 		return 1;
 	}
-	else return F(result, visited);
+	else {
+		return visited[n] = F(result, visited);
+	}
 }
 
 
-int G(int l, vector<bool>& visited) {
-	fill(visited.begin(), visited.end(), false);
+int G(int l, vector<int>& visited) {
 	return F(l, visited);
 }
 
@@ -54,14 +63,13 @@ int main(){
 	int l{ 0 }, r{ 0 };
 	cin >> l >> r;
 
-	vector<bool> visited(100001);
-	int result {0};
+	vector<int> visited(100001, DEFAULT_NUM);
+	int result = 0;
 
 	for (int i = l; i <= r; ++i) {
 		result += G(i, visited);
 	}
 
 	cout << result << "\n";
-
 	return 0;
 }
