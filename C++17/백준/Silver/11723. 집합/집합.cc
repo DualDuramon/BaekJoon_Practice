@@ -1,80 +1,47 @@
 #include<iostream>
-#include<set>
-#include<map>
+#include<vector>
+#include<cstdlib>
 
 using namespace std;
 
-enum OrderType {
-	add,
-	rem,
-	check,
-	toggle,
-	all,
-	empty
-};
+void Solve(const string& str, vector<bool>& bitMap) {
 
-void SetOrders(map<string,OrderType>& map) {
-	map["add"] = OrderType::add;
-	map["remove"] = OrderType::rem;
-	map["check"] = OrderType::check;
-	map["toggle"] = OrderType::toggle;
-	map["all"] = OrderType::all;
-	map["empty"] = OrderType::empty;
-}
+	if (str.compare("add") == 0) {
+		int n;
+		cin >> n;
 
-void SwapSet(set<int>& set1, bool isGong ){
-	if (isGong) {
-		set1.clear();
-	}
-	else {
-		set1.insert({ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 });
-	}
-}
+		bitMap[n - 1] = true;
 
-void Solve(const map<string,OrderType>& orderMap, set<int>& mySet, const string& order) {
-	int num = 0;
-
-	switch (orderMap.at(order)) {
-	case OrderType::add:
-		cin >> num;
-		mySet.insert(num);
-		break;
-	case OrderType::rem:
-		cin >> num;
-
-		if (mySet.find(num) != mySet.end()) mySet.extract(num);
-		break;
-	case OrderType::check:
-		cin >> num;
-		if (mySet.find(num) != mySet.end()) {
-			cout << "1\n";
-		}
-		else {
-			cout << "0\n";
-		}
-		break;
-	case OrderType::toggle:
-		cin >> num;
-
-		if (mySet.find(num) != mySet.end()) {
-			mySet.extract(num);
-		}
-		else {
-			mySet.insert(num);
-		}
-		break;
-	case OrderType::all:
-		SwapSet(mySet, false);
-		break;
-
-	case OrderType::empty:
-		SwapSet(mySet, true);
-		break;
-
-	default:
-		break;
 	}
 
+	else if (str.compare("remove") == 0) {
+		int n;
+		cin >> n;
+
+		bitMap[n - 1] = false;
+	}
+
+	else if (str.compare("check") == 0) {
+		int n;
+		cin >> n;
+
+		cout << (bitMap[n - 1] ? "1\n" : "0\n");	
+	}
+	
+	else if (str.compare("toggle") == 0) {
+		int n = 0;
+		cin >> n;
+
+		bitMap[n - 1] = !bitMap[n - 1];
+	}
+	
+	else if (str.compare("all") == 0) {
+		fill(bitMap.begin(), bitMap.end(), true);
+	}
+	
+	else if (str.compare("empty") == 0) {
+		fill(bitMap.begin(), bitMap.end(), false);
+	}
 }
 
 
@@ -85,18 +52,13 @@ int main(){
 	int n{ 0 };
 	cin >> n;
 
-	set<int> mySet;
-	map<string, OrderType> orderMap;
-	SetOrders(orderMap);
-
+	vector<bool> bitMap(20, false);
 
 	for (int i = 0; i < n; ++i) {
 		string str;
 		cin >> str;
 
-		Solve(orderMap, mySet, str);
+		Solve(str, bitMap);
 	}
-
-
 	return 0;
 }
