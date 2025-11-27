@@ -17,8 +17,7 @@ vector<int> solution(int l, int r) {
     
     for(int i = l ; i <=r ; ++i)
     {
-        string str = "";
-        itoa(str, i);
+        string str = to_string(i);
         conTrigger = false;
         
         for(auto& ch : str){
