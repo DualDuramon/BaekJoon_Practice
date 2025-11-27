@@ -13,27 +13,23 @@ void itoa(string& str, int n){
 
 vector<int> solution(int l, int r) {
     vector<int> answer;
-    bool conTrigger = false;
+    vector<int> map = vector<int>({
+        5, 
+        50, 55, 
+        500, 505, 550, 555,
+        5000, 5005, 5050, 5055,5500,5505,5550,5555,
+        50000, 50005,50050,50055,50500,50505,50550,50555,55000,55005,55050,55055,55500,55505,55550,55555,
+        500000, 500005, 500050,500055,500500,500505,500550,500555,505000,505005,505050,505055,505500,505505,505550,505555,550000,550005,550050,550055,550500,550505,550550,550555,555000,555005,555050,555055,555500,555505,555550,555555
+    });
     
-    for(int i = l ; i <=r ; ++i)
-    {
-        string str = to_string(i);
-        conTrigger = false;
-        
-        for(auto& ch : str){
-            if(ch != '0' && ch != '5'){
-                conTrigger = true;
-                break;
-            }
-        }
-        
-        if(!conTrigger){
-            answer.emplace_back(i);
-        }
+    for(int i = 0 ; i < map.size(); ++i){
+        if(l > map[i]) continue;
+        if(map[i] > r) break;
+        answer.push_back(map[i]);
     }
     
     if(answer.size() == 0){
-        answer.emplace_back(-1);
+        answer.push_back(-1);
     }
     
     return answer;
