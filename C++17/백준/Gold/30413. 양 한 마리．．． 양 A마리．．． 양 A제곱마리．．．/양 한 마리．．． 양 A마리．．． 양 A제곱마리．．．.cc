@@ -34,11 +34,11 @@ int main() {
 		return 0;
 	}
 
-	long long numerator = DivConq(a, b);
-	numerator = (numerator - 1 + MOD) % MOD;
+	long long bunja = DivConq(a, b);
+    bunja = (bunja - 1) % MOD;
 
-	long long denominator_inv = DivConq(a - 1, MOD - 2);
-	long long result = (numerator * denominator_inv) % MOD;
+	long long bunmo_mod = DivConq(a - 1, MOD - 2);
+	long long result = (bunja * bunmo_mod) % MOD;
 
 	cout << result << "\n";
 	return 0;
